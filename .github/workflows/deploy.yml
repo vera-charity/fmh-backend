@@ -37,7 +37,7 @@ jobs:
       run: mvn clean package -P dev -pl backend -am
 
     - name: Log in to the Container registry
-      uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+      uses: docker/login-action@327cd5a69de6c009b9ce71bce8395f28e651bf99
       with:
         registry: ${{ env.REGISTRY }}
         username: ${{ github.actor }}
